@@ -61,11 +61,11 @@ jobs:
                 args: '--disableYarnAudit --disableNodeAudit'
 
 
-            - name: Upload Dependency Check Report
-              uses: actions/upload-artifact@v3.1.3
-              with:
-                name: dependency-check-report
-                path: dependency-check-report.*
+            # - name: Upload Dependency Check Report
+            #   uses: actions/upload-artifact@v3.1.3
+            #   with:
+            #     name: dependency-check-report
+            #     path: dependency-check-report.*
 
             - name: Install Trivy
               run: |
