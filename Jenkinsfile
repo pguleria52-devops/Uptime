@@ -11,7 +11,7 @@ pipeline{
         
         stage('Checkout from GIT'){
             steps{
-                git branch: 'main', url:'https://github.com/pguleria52-devops/Uptime.git'
+               git credentialsId: 'github-token',  branch: 'master', url:'https://github.com/pguleria52-devops/Uptime.git'
             }
         }
 
